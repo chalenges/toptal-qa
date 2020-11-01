@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+    imburse-qa:
+        image: imburse-qa:latest
+        container_name: imburse-qa
+        privileged: true
+        env_file:
+            - env-file.env
+        network_mode: "host"
