@@ -12,4 +12,4 @@ compress:
 	rm -r ../imburse-qa/
 
 build-docker-image:
-	docker build -t imburse-qa .
+	docker build -t imburse-qa:0.1.0 .

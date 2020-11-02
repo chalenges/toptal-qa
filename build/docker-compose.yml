@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
     imburse-qa:
-        image: imburse-qa:latest
+        image: imburse-qa:0.1.0
         container_name: imburse-qa
         privileged: true
         env_file:
