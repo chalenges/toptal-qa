@@ -33,13 +33,13 @@ Feature: Order Creation
 
   @OrderCreationWithExceededLengthOrderMetadataKey
   Scenario: Create Order with response METADATA_KEY_SIZE_OUT_OF_RANGE
-    Given I create an order object to post the create order with an exceeded length order metadata key (101 characters)
+    Given I create an order object to post the create order with an exceeded length order metadata key
     When I do the post create order to succeed
     Then I expect to receive the METADATA_KEY_SIZE_OUT_OF_RANGE response
 
   @OrderCreationWithExceededLengthOrderMetadataValue
   Scenario: Create Order with response METADATA_VALUE_SIZE_OUT_OF_RANGE
-    Given I create an order object to post the create order with an exceeded length order metadata value (101 characters)
+    Given I create an order object to post the create order with an exceeded length order metadata value
     When I do the post create order to succeed
     Then I expect to receive the METADATA_VALUE_SIZE_OUT_OF_RANGE response
 
