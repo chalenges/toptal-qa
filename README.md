@@ -72,8 +72,10 @@
   
 ### 1.2.3 - Maven
   * Open the terminal in the project directory;
-  * Run the following command:
-		 `mvn clean test -Dcucumber.filter.tags="@ExampleTag and @ExampleTag2"`
+  * Run the following command to run a specific tag:
+		 `mvn clean test -Dcucumber.filter.tags="@ExampleTag"`
+  * Run the following command to run all the tests:
+  `mvn clean test`
 
 
 ## 2 - Reporting
